@@ -1,8 +1,8 @@
 #!/usr/bin/python
 import sys, random
-scrambled_words=[]
+shuffled_words=[]
 words_per_line=[]
-debug=False
+debug=True
 filename='lyrics.txt'
 
 # grab each line of plain txt file
@@ -16,30 +16,31 @@ for line in content:
   if line: 
     # split into words
     curr_words = line.split()
-    # scramble words, add to list, keep count or words/line
+    # add words to shuffled_words list, keep count of words/line
     counter=0
     for word in curr_words:
       counter = counter+1
-      scrambled_words.append(word)
+      shuffled_words.append(word)
     words_per_line.append(counter)
 
 # calculate average words per line
 avg_wpl = reduce(lambda x, y: x + y, words_per_line)/len(words_per_line)
+
 if debug:
-  print "scrambled_words before they are scrambled:"
-  print scrambled_words
+  print "shuffled_words before they are shuffled:"
+  print shuffled_words
   print "Average words per line is " + str(avg_wpl)
 
 # shuffle word list
-random.shuffle(scrambled_words)
+random.shuffle(shuffled_words)
 
 if debug:
-  print "scrambled_words after they are scrambled:"
-  print scrambled_words
+  print "shuffled_words after they are shuffled:"
+  print shuffled_words
 
 # print shuffled words
 counter=0
-for word in scrambled_words:
+for word in shuffled_words:
   counter = counter+1
   print word,
   if counter % avg_wpl == 0:
