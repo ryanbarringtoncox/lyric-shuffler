@@ -14,7 +14,7 @@ with open(filename) as f:
   content = f.readlines()
 f.close
 
-# remove double quotes and empty lines
+# remove unwanted charsand empty lines
 for line in content:
   line=line.replace('"','').replace('\'','').replace('.','').replace(',','').strip('\n')
   if line: 
@@ -25,6 +25,7 @@ for line in content:
     for word in curr_words:
       counter = counter+1
       word = word.lower()
+      # convert words to lower case and remove boring words if remove_boring_words=True
       if not remove_boring_words: shuffled_words.append(word)
       elif word not in boring_words: shuffled_words.append(word)
     words_per_line.append(counter)
