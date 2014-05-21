@@ -3,7 +3,11 @@ import sys, random
 shuffled_words=[]
 words_per_line=[]
 debug=True
+remove_boring_words=True
 filename='lyrics.txt'
+
+# all lower case please
+boring_words = ['i','you','the','is','my','it','but','in','a']
 
 # grab each line of plain txt file
 with open(filename) as f:
@@ -20,7 +24,9 @@ for line in content:
     counter=0
     for word in curr_words:
       counter = counter+1
-      shuffled_words.append(word)
+      word = word.lower()
+      if not remove_boring_words: shuffled_words.append(word)
+      elif word not in boring_words: shuffled_words.append(word)
     words_per_line.append(counter)
 
 # calculate average words per line
