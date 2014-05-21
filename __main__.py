@@ -12,7 +12,7 @@ f.close
 
 # remove double quotes and empty lines
 for line in content:
-  line=line.replace('"','').strip('\n')
+  line=line.replace('"','').replace('\'','').replace('.','').replace(',','').strip('\n')
   if line: 
     # split into words
     curr_words = line.split()
