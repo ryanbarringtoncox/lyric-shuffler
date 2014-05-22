@@ -4,7 +4,7 @@ shuffled_words=[]
 words_per_line=[]
 debug=False
 remove_boring_words=True
-filename='lyrics.txt'
+filename=sys.argv[1]
 
 # all lower case please
 boring_words = ['i','you','the','is','my','it','but','in','a','doo']
