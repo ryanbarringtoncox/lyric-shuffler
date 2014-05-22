@@ -17,6 +17,7 @@ fi
 for f in $1/*.txt
 do
   cat $f >> $all_lyrics_file
+  echo "" >> $all_lyrics_file 
 done
 
 # shuffle up all_lyrics to stdout
