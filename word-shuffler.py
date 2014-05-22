@@ -2,12 +2,12 @@
 import sys, random
 shuffled_words=[]
 words_per_line=[]
-debug=True
+debug=False
 remove_boring_words=True
 filename='lyrics.txt'
 
 # all lower case please
-boring_words = ['i','you','the','is','my','it','but','in','a']
+boring_words = ['i','you','the','is','my','it','but','in','a','doo']
 
 # grab each line of plain txt file
 with open(filename) as f:
