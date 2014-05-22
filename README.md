@@ -1,16 +1,12 @@
 Usage
 =======
 
-For now, just clone the repo and cd in.  Then run like this -
+Clone the repo and cd in.  The run.py script takes path to dir of songs.  Song files should be plain text with 'txt' extension.  Run like this -
 
-    ./__main__.py
+    ./run.py /path/to/dir/of/songs/
 
-It will shuffle up the given text file (words courtesy of Son House) and print to console.
+It will shuffle up the given text files and print to stdout. You can write to new file like this -
 
-Or write to new file like this -
-
-    ./__main__.py > new_file.txt
-
-More to come...
+    ./__main__.py > mashed_up_lyrics_output.txt
 
 
