@@ -1,7 +1,7 @@
 # Lyric Shuffler                                                                                                                                                                                
 ## Intro
 
-Experiment with your songwriting approach.  Draw inspiration from a scramble.  This script allows you to mash up existing song lyrics and see new word combinations.  It takes one or more plain text files (of song lyrics) and shuffles all the containing words, giving you a rich radnom collage.  How else will you get strange lines like "dice me magic" or "nothing to sucker for?"
+Experiment with your songwriting approach.  Draw inspiration from a scramble.  This script allows you to mash up existing song lyrics and see new word combinations.  It takes one or more plain text files (of song lyrics) and shuffles all the containing words, giving you a rich radnom collage.  How else will you get strange lines like "missing ripped black glass entertainment hips", "seat baby moonbeams" or "nothing to sucker for?"
 
 ## Usage
 
