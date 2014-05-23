@@ -1,6 +1,6 @@
 #!/bin/bash
 curr_dir=`pwd`
-target_path="$curr_dir/run.py"
+target_path="$curr_dir/run.sh"
 link_path="/usr/local/bin/lyric-shuffler"
 
 if [ -L $link_path  ]; then

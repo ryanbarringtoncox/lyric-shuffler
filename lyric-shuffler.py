@@ -4,12 +4,12 @@ shuffled_words=[]
 words_per_line=[]
 debug=False
 remove_boring_words=True
-filename=sys.argv[1]
 
 # all lower case please
 boring_words = ['i','you','the','is','my','it','but','in','a','doo']
 
 # grab each line of plain txt file
+filename=sys.argv[1]
 with open(filename) as f:
   content = f.readlines()
 f.close
