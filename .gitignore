@@ -1,3 +1,5 @@
 *.swp
 all_lyrics.txt
 *.pyc
+*.tmp
+*.txt
