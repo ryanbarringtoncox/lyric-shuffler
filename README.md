@@ -8,6 +8,7 @@ Experiment with your songwriting approach.  Draw inspiration from a scramble.  T
 Clone the repo and cd in.  Run the install script to get lyric-shuffler in your path -
 
     git clone https://github.com/ryanbarringtoncox/lyric-shuffler/
+    cd lyric-shuffler/
     ./install.sh
 
 Then pass the program some plain text files full of rich words - 
