@@ -22,11 +22,3 @@ You'll see the new output stream by on the console.  You can run it again with t
 You can shuffle a whole dir like this (not recursive) -
 
     lyric-shuffler *
-
-## Use with Lyric-Scraper
-
-Built to work in conjunction with [lyric-scraper](https://github.com/ryanbarringtoncox/lyric-scraper).  Once you have both installed, you can rapidly scrape lyrics and shuffle them up.  Here's an example of scraping and shuffling Morrissey with Bob Dylan -
-
-    lyric-scraper http://www.songlyrics.com/morrissey/ouija-board-lyrics/ 
-    lyric-scraper http://www.songlyrics.com/bob-dylan/buckets-of-rain-lyrics/
-    lyric-shuffler ouija-board-lyrics.txt  buckets-of-rain-lyrics.txt
